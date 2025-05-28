@@ -14,6 +14,7 @@
     "denyBtn": "No Thanks"
   },
   "common": {
+    "opening": "Opening...",
     "server": "server",
     "connecting": "Connecting",
     "noImage": "No Image",
@@ -473,9 +474,7 @@
     "batchIPAddressesWarning": "You can only add up to {limit} servers at once. Only the first {limit} IP addresses will be processed.",
     "someIPAddressesAppearInvalid": "Some IP addresses appear invalid:",
     "assignToCommunityDescriptionBatch": "Add {count} to your community: {communityName}",
-
-
-    "proTip":{
+    "proTip": {
       "title": "Pro Tip:",
       "createCommunity": "Create a",
       "toGroupServers": "to group your servers together and enhance your presence on CS2ServerList!"
