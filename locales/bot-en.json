@@ -1,0 +1,33 @@
+{
+  "language": "English",
+  "code": "en",
+  "server": {
+    "status": {
+      "online": "✅ Online",
+      "offline": "❌ Offline"
+    },
+    "players": "**{count}**/{max} players",
+    "playersWithBots": "**{count}**({bots})**/{max}** players",
+    "ipAddress": "IP Address",
+    "currentMap": "Current Map",
+    "gameMode": "Game Mode",
+    "rank": "Rank",
+    "rankValue": "#{rank}",
+    "notAvailable": "N/A",
+    "error": "Error"
+  },
+  "community": {
+    "playersStatus": "{status} **{count}/{max}** players",
+    "playersStatusWithBots": "{status} **{count}**({bots})**/{max}** players",
+    "map": "{emoji} {map}"
+  },
+  "button": {
+    "refresh": "Refresh",
+    "connect": "Connect",
+    "viewWebsite": "View Website",
+    "refreshServers": "Refresh Servers"
+  },
+  "footer": {
+    "poweredBy": "CS2ServerList.com"
+  }
+} 

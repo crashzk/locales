@@ -1,4 +1,5 @@
 {
+  "code": "en",
   "locationPrompt": {
     "title": "Share Your Location",
     "description": "Allow us to use your location to calculate accurate distances to game servers.",
@@ -13,18 +14,18 @@
     "denyBtn": "No Thanks"
   },
   "common": {
+    "server": "server",
     "connecting": "Connecting",
-    "noImage": "No Image", 
+    "noImage": "No Image",
     "creating": "Creating...",
-    "kdRatio": "K/D Ratio",
-    "headshotsShort": "HS",
     "community": "Community",
     "refresh": "Refresh",
     "view": "View",
     "addServer": "Add Server",
+    "adding": "Adding...",
     "players": "players",
     "player": "Player",
-    "playerCount": "No players | {count} player | {count} players",
+    "playtime": "Playtime",
     "error": "An error occurred",
     "search": "Search",
     "loading": "Loading...",
@@ -34,12 +35,10 @@
     "tryAgain": "Try Again",
     "noResults": "No results found",
     "filters": "Filters",
-    "reset": "Reset",
     "done": "Done",
     "user": "user",
     "users": "users",
     "edit": "Edit",
-    "create": "Create",
     "cancel": "Cancel",
     "save": "Save",
     "delete": "Delete",
@@ -53,6 +52,8 @@
     "roundsLoses": "Round Losses",
     "lastSeen": "Last Seen",
     "score": "Score",
+    "kdRatio": "K/D Ratio",
+    "headshotsShort": "HS",
     "headshots": "Headshots",
     "assists": "Assists",
     "kills": "Kills",
@@ -77,7 +78,6 @@
     "servers": "Servers",
     "status": "Status",
     "noDescription": "No description provided",
-    "remove": "Remove",
     "copied": "Copied!",
     "copyCode": "Copy Code",
     "recentlyAdded": "Recently Added",
@@ -86,7 +86,6 @@
     "maxPlayers": "Max Players",
     "online": "Online",
     "selectAll": "Select All",
-    "playtime": "Playtime",
     "noRecentServers": "No recent servers found.",
     "couldNotLoadRecent": "Could not load recent servers.",
     "noStatsTracking": "Player stats tracking not enabled",
@@ -109,27 +108,15 @@
           "contentPlacement": "Important content should be centered, as edges may be cropped on some displays"
         }
       }
-    },
-    "steps": {
-      "select": {
-        "title": "Step {step}: {action}",
-        "servers": "Select Servers to Edit ({count}/{max})",
-        "maxLimit": "You can select up to {max} servers at a time.",
-        "next": "Next: {action}"
-      }
     }
   },
   "nav": {
     "home": "Home",
-    "servers": "Servers",
-    "stats": "Statistics",
-    "about": "About",
     "explore": "Explore",
     "favorites": "Favorites",
     "communities": "Communities",
     "hosting": "Hosting",
     "myProfile": "My Profile",
-    "adminPanel": "Admin Panel",
     "logout": "Logout",
     "loginWithSteam": "Login with Steam"
   },
@@ -137,13 +124,10 @@
     "name": "Server Name",
     "connect": "Connect",
     "connectConfirm": "Connect to this server?",
-    "joinServer": "Join Server",
     "map": "Map",
     "status": "Status",
     "favorite": "Add to favorites",
     "unfavorite": "Remove from favorites",
-    "addFavorite": "Add Favorite",
-    "removeFavorite": "Remove Favorite",
     "errorLoading": "Error Loading Server",
     "editServer": "Edit Server",
     "claimServer": "Claim Server",
@@ -175,16 +159,11 @@
     "vacEnabled": "Enabled",
     "vacDisabled": "Disabled",
     "players": {
-      "online": "Online Players",
       "current": "Current Players",
       "top": "Top Players",
       "noPlayersOnline": "No players currently online",
       "score": "Score",
       "inGame": "In Game",
-      "kills": "Kills",
-      "deaths": "Deaths",
-      "assists": "Assists",
-      "hs": "HS",
       "counterTerrorists": "Counter-Terrorists",
       "terrorists": "Terrorists",
       "noCTPlayers": "No CT players",
@@ -222,7 +201,6 @@
     "currentlySavedEmail": "Currently saved email:"
   },
   "filters": {
-    "search": "Search",
     "searchPlaceholder": "Search by hostname or map...",
     "searchCountry": "Search for a country...",
     "gameModes": "Game Modes",
@@ -247,7 +225,6 @@
       "sortBy": "Sort by:",
       "name": "Name (A-Z)",
       "players": "Most Online Players",
-      "distance": "Distance",
       "rank": "Rank",
       "servers": "Most Servers",
       "capacity": "Capacity"
@@ -272,7 +249,6 @@
     "communityName": "Community Name",
     "communitySlug": "Community Slug",
     "description": "Description",
-    "slugHelp": "A slug is a unique identifier used in the URL for your community (e.g., \"my-community\" in \"cs2serverlist.com/community/my-community\"). Only English letters, numbers, and hyphens allowed.",
     "tabs": {
       "servers": "Servers",
       "statistics": "Statistics"
@@ -289,14 +265,12 @@
     "day": "Last 24 hours",
     "week": "Last 7 days",
     "month": "Last 30 days",
-    "allTime": "All Time",
     "avgPlayers": "Avg. Players",
     "peakPlayers": "Peak Players",
     "uptime": "Uptime",
     "players": "Players",
     "maps": "Maps",
     "mostPlayedMaps": "Most Played",
-    "mapPlayerCounts": "Player Distribution",
     "mapRotation": "Map Timeline",
     "mapChanges": "Map Changes",
     "avgMapDuration": "Average Duration",
@@ -307,27 +281,28 @@
       "mostPlayedMaps": "Shows the most frequently played maps on this server and how often they appear in rotation",
       "mapPlayerCounts": "Compares average and peak player counts for each map to see which maps attract the most players",
       "mapRotation": "Visualizes the map rotation timeline, showing when maps change and how long each map is played"
-    }
+    },
+    "globalStats": "Global Statistics",
+    "playersToday": "Players Today",
+    "peak24h": "24h Peak",
+    "peak7days": "7D Peak",
+    "allTimePeak": "All Time Peak",
+    "serverStats": "Server Statistics"
   },
   "timeAgo": {
     "justNow": "Just now",
     "minutes": "{count} minutes ago",
-    "hour": "{count} hour ago",
     "hours": "{count} hours ago",
-    "day": "{count} day ago",
     "days": "{count} days ago"
   },
   "favorites": {
     "title": "Your Favorites",
-    "count": "{count} servers",
     "noFavorites": "No Favorite Servers",
     "favoriteServersWillAppear": "Your favorite servers will appear here.",
     "browseServers": "Browse Servers"
   },
   "errors": {
-    "loadingServers": "Failed to load servers",
     "loadingFavorites": "Failed to load favorite servers",
-    "loadingCommunities": "Failed to fetch communities",
     "failedToLoadStats": "Failed to load statistics",
     "failedToLoadServer": "Failed to load server details. Please try again.",
     "noDataAvailable": "No data available for this time period",
@@ -357,7 +332,8 @@
     "contactUs": "Contact Us",
     "about": "About",
     "copyright": "© 2025 CS2ServerList. All rights reserved.",
-    "disclaimer": "This website is not affiliated with Valve Corporation. Some images are property of Valve Corporation."
+    "disclaimer": "This website is not affiliated with Valve Corporation. Some images are property of Valve Corporation.",
+    "language": "Language"
   },
   "auth": {
     "connectWithSteam": "Connect with Steam",
@@ -365,7 +341,14 @@
     "loginWithSteam": "Login with Steam",
     "termsAgreement": "By logging in, you agree to our Terms of Service and Privacy Policy",
     "loginRequired": "Login Required",
-    "loginRequiredDescription": "You need to login to access this page"
+    "loginRequiredDescription": "You need to login to access this page",
+    "loading": {
+      "steam": "Steam Authentication",
+      "discord": "Discord Integration",
+      "processing": "Processing Authentication",
+      "errorTitle": "Authentication Error",
+      "retry": "Try Again"
+    }
   },
   "hostings": {
     "title": "Hosting Providers",
@@ -382,7 +365,6 @@
     "dataManagement": "Data Management",
     "accountDeletedSuccess": "Your account has been successfully deleted",
     "dataDeletedSuccess": "Your data has been successfully deleted",
-    "backToServers": "Back to Servers",
     "noServersYet": "No Servers Yet",
     "noServersYetDescription": "You haven't added any servers to your profile yet.",
     "serverLimits": "Server Limits",
@@ -410,6 +392,8 @@
     }
   },
   "discordIntegration": {
+    "embedLanguage": "Embed Language",
+    "embedLanguageDesc": "Select the language for the embed",
     "title": "Discord Server Integration",
     "discordAccountRequired": "Discord Account Required",
     "discordAccountRequiredDesc": "To integrate your servers with Discord, you need to link your Discord account first.",
@@ -425,10 +409,8 @@
     "selectServerAndChannel": "Select a Discord server and channel to integrate with {serverName}:",
     "selectDiscordServer": "Select a Discord server...",
     "cancel": "Cancel",
-
     "updateIntegration": "Update Integration",
     "createIntegration": "Create Integration",
-    
     "imageOptions": "Map Image Options",
     "thumbnailImage": "Thumbnail Image",
     "thumbnailDesc": "Small image next to the title",
@@ -436,7 +418,6 @@
     "bottomDesc": "Larger image at the bottom of the embed",
     "noImageDesc": "Text-only embed without any map image",
     "communityBannerOptions": "Community Banner Options",
-    
     "button": "Discord Integration",
     "yourEmbeds": "Your Discord Embeds",
     "createEmbed": "Create Embed",
@@ -455,18 +436,13 @@
     "addFirstServer": "Add your first server",
     "embedTitle": "Embed Title",
     "embedDescription": "Embed Description",
-    "embedColor": "Embed Color",
     "discordServer": "Discord Server",
     "discordChannel": "Discord Channel",
     "selectServer": "Select a server",
     "selectChannel": "Select a channel",
     "dragToReorder": "Drag to reorder",
-    "addServerToEmbed": "Add Server to Embed",
     "searchServers": "Search servers",
     "saveChanges": "Save Changes",
-    "noDiscordChannels": "No channels found for this server",
-    "fieldName": "Field Name",
-    "inlineField": "Inline Field",
     "addServer": "Add Server",
     "noServersFound": "No servers found",
     "inline": "Inline",
@@ -477,13 +453,34 @@
     "discordIntegrationDescription": "Connect your servers to Discord channels for real-time updates.",
     "linkNow": "Link now",
     "notConnected": "Not Connected",
-    "linkYourDiscordAccount": "Link your Discord account for server integrations"
+    "linkYourDiscordAccount": "Link your Discord account for server integrations",
+    "unlink": "Unlink",
+    "unlinking": "Unlinking...",
+    "unlinkConfirmation": "Are you sure you want to unlink your Discord account?",
+    "unlinkSuccess": "Discord account unlinked successfully!",
+    "unlinkError": "Failed to unlink Discord account"
   },
   "serverControl": {
-    "communityMediaInfo": "When enabled, these servers will use your community's social media links on their details pages.",
-    "bulkEditServers": "Bulk Edit Servers",
+    "addNewServer": "Add New Server",
+    "individualServers": "Individual Servers",
+    "batchAdd": "Batch Add",
+    "serverIPAddress": "Server IP Address",
+    "addAnotherServer": "Add Another Server",
+    "gameModeForAllServers": "Game Mode for All Servers",
+    "gameModeForAllServersDescription": "This game mode will be applied to all servers in the batch",
+    "serverIPAddresses": "Server IP Addresses",
+    "batchIPAddressesDescription": "Enter each IP on a new line or separate with commas (e.g. 1.2.3.4:27015, 5.6.7.8:27015)",
+    "batchIPAddressesWarning": "You can only add up to {limit} servers at once. Only the first {limit} IP addresses will be processed.",
+    "someIPAddressesAppearInvalid": "Some IP addresses appear invalid:",
+    "assignToCommunityDescriptionBatch": "Add {count} to your community: {communityName}",
+
+
+    "proTip":{
+      "title": "Pro Tip:",
+      "createCommunity": "Create a",
+      "toGroupServers": "to group your servers together and enhance your presence on CS2ServerList!"
+    },
     "editServer": "Edit Server",
-    "serverOnMainPage": "Server on Main Page",
     "managePlayers": "Manage Players",
     "showOnMainPage": "Show on Main Page",
     "displayOnMainList": "Display this server on the main server list page",
@@ -498,13 +495,6 @@
     "communityNote": "Note: If you add this server to your community, it will be visible to all members of the community.",
     "selectGameMode": "Select a game mode",
     "selectPrimaryGameMode": "Select the primary game mode for this server",
-    "bulkEditDescription": "Bulk edit allows you to update multiple servers at once. Select up to 20 servers to edit, then choose which settings to update.",
-    "note": "Note",
-    "bulkEditNote": "Community assignment and country settings will be applied to all selected servers. IP addresses can be changed individually for each server.",
-    "step1": "Step 1: Select Servers to Edit ({count}/20)",
-    "maxServersSelection": "You can select up to 20 servers at a time for bulk editing.",
-    "nextEditSettings": "Next: Edit Settings",
-    "step2": "Step 2: Edit Settings for {count} Servers",
     "commonSettings": "Common Settings",
     "commonSettingsDescription": "These settings will apply to all selected servers:",
     "updateIpAddresses": "Update Server IP Addresses",
@@ -525,11 +515,8 @@
     "updatingServers": "Updating servers...",
     "failedToUpdateServers": "Failed to update some servers:",
     "successfullyUpdated": "Successfully updated {count} server(s).",
-    "backToSelection": "Back to Selection",
-    "editMoreServers": "Edit More Servers",
     "visibilityInfo": "Use the visibility toggle to control which servers appear on the main page and are included in rankings",
     "maximizePresence": "To maximize your presence, add more servers to your community but keep only your best/most popular servers visible on the main page",
-    "autoHideInfo": "When adding new servers, they'll automatically be hidden from the main page if you've reached your limit",
     "bulkEdit": {
       "title": "Bulk Edit Servers",
       "description": "Bulk edit allows you to update multiple servers at once. Select up to 20 servers to edit, then choose which settings to update.",
@@ -566,10 +553,8 @@
     "previewCharactersTip": "Only the first 100 characters will be shown in social media previews",
     "conciseTip": "Be concise and descriptive for better engagement",
     "editCommunity": "Edit Community",
-    "logo": "Logo",
     "chooseLogo": "Choose Logo",
     "logoSizeRecommendation": "Upload a square image (recommended size: 200x200px)",
-    "banner": "Banner",
     "chooseBanner": "Choose Banner",
     "noBanner": "No banner image",
     "bannerSizeRecommendation": "Upload a landscape image (recommended size: 1200x300px)",
@@ -579,9 +564,7 @@
     "maxFileSizeRecommendation": "Maximum file size: 5MB",
     "formatRecommendation": "Formats: JPG, PNG, or GIF",
     "contentPlacementRecommendation": "Important content should be centered, as edges may be cropped on some displays",
-    "displayLocationInfo": "The banner will be displayed at the top of your community page and in social media previews",
     "uploading": "Uploading: {progress}%",
-    "saveChanges": "Save Changes",
     "deleteCommunity": "Delete Community",
     "deleteConfirmation": "Are you sure you want to delete your community? This action cannot be undone."
   },
@@ -604,15 +587,11 @@
     "singleIp": "Single IP",
     "subnetMask": "Subnet Mask",
     "networkAddress": "Network Address",
-    "logoAndBanner": "Logo & Banner",
     "logoDescription": "Upload a square image (recommended size: 200x200px)",
     "bannerDescription": "Upload a landscape image (recommended size: 1200x300px)",
     "uploadLogo": "Choose Logo",
     "uploadBanner": "Choose Banner",
-    "hostingInformation": "Hosting Information",
-    "hostingName": "Hosting Name",
     "description": "Description",
-    "contactInformation": "Contact Information",
     "websiteAdminOnly": "Website can only be changed by administrators.",
     "logoUploadSuccess": "Logo uploaded successfully",
     "logoUploadFailed": "Failed to upload logo",
@@ -634,13 +613,10 @@
     "resetAllStats": "Reset All Stats",
     "deleteAllStats": "Delete All Stats",
     "playerStatsUpdatedSuccessfully": "Player stats updated successfully",
-    "playerStatsUpdatedSuccessfullyDescription": "The player stats have been successfully updated.",
     "playerStatsDeletedSuccessfully": "Player stats deleted successfully",
-    "playerStatsDeletedSuccessfullyDescription": "The player stats have been successfully deleted.",
     "confirmResetAll": "Are you sure you want to reset ALL player stats? This will set all kills, deaths, etc. to zero but keep the players in the database.",
     "playerStatsResetSuccessfully": "All player stats have been reset successfully",
     "confirmDeleteAll": "Are you sure you want to delete ALL player stats? This action cannot be undone.",
-    "failedToDeleteAllPlayerStats": "Failed to delete all player stats",
     "noPlayerStatsAvailable": "No Player Stats Available",
     "noPlayerStatsAvailableDescription": "No player statistics have been recorded for this server yet."
   },
