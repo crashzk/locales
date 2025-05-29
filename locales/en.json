@@ -14,7 +14,6 @@
     "denyBtn": "No Thanks"
   },
   "common": {
-    "opening": "Opening...",
     "server": "server",
     "connecting": "Connecting",
     "noImage": "No Image",
@@ -76,6 +75,7 @@
     "youtube": "YouTube",
     "logo": "Logo",
     "banner": "Banner",
+    "noBanner": "No Banner",
     "servers": "Servers",
     "status": "Status",
     "noDescription": "No description provided",
@@ -92,6 +92,18 @@
     "noStatsTracking": "Player stats tracking not enabled",
     "addYourFirstServer": "Add your first server!",
     "noServers": "No Servers Found",
+    "viewAll": "View All",
+    "favorite": "Favorite",
+    "connect": "Connect",
+    "description": "Description",
+    "emailAddress": "Email Address",
+    "connected": "Connected",
+    "stats": "Stats",
+    "scrollForMore": "Scroll for more",
+    "confirmDelete": "Are you sure you want to delete this {entity}? This action cannot be undone.",
+    "confirmUnlink": "Are you sure you want to unlink your {entity}?",
+    "uploading": "Uploading: {progress}%",
+    "viewCommunity": "View Community",
     "fileUpload": {
       "logo": {
         "choose": "Choose Logo",
@@ -123,16 +135,13 @@
   },
   "server": {
     "name": "Server Name",
-    "connect": "Connect",
     "connectConfirm": "Connect to this server?",
     "map": "Map",
     "status": "Status",
     "favorite": "Add to favorites",
     "unfavorite": "Remove from favorites",
     "errorLoading": "Error Loading Server",
-    "editServer": "Edit Server",
     "claimServer": "Claim Server",
-    "viewCommunity": "View Community",
     "rank": "Rank",
     "address": "Address",
     "mod": "Mod",
@@ -173,7 +182,11 @@
       "problem": "Problem:",
       "allPlayersUnknown": "All players are showing as \"unknown\". This is a common CS2 server issue.",
       "solution": "Solution:",
-      "installPlugin": "Install the ServerListPlayersFix MetaMod plugin on your server."
+      "installPlugin": "Install the ServerListPlayersFix MetaMod plugin on your server.",
+      "topPerformers": "Top Performers",
+      "allPlayersStats": "All Players Statistics",
+      "noRecords": "No player records found",
+      "statsNotEnabled": "Stats recording needs to be configured on this server to view player statistics."
     }
   },
   "dataExport": {
@@ -250,17 +263,14 @@
     "communityName": "Community Name",
     "communitySlug": "Community Slug",
     "description": "Description",
-    "tabs": {
-      "servers": "Servers",
-      "statistics": "Statistics"
-    },
-    "noBanner": "No Banner",
     "noServersFound": "No servers found for this community.",
     "noServersMatchFilters": "No servers match your filter criteria. Try adjusting your search criteria.",
     "addToCommunity": "Add to community",
     "community": "Community",
     "noOtherServersInCommunity": "No other servers in this community.",
-    "couldNotLoadCommunityServers": "Could not load community servers."
+    "couldNotLoadCommunityServers": "Could not load community servers.",
+    "communityDisabled": "Your community has been disabled by an administrator. You can create a new community or contact support if you believe this is an error.",
+    "communityNotFound": "The community you're looking for doesn't exist or has been removed."
   },
   "stats": {
     "day": "Last 24 hours",
@@ -288,7 +298,8 @@
     "peak24h": "24h Peak",
     "peak7days": "7D Peak",
     "allTimePeak": "All Time Peak",
-    "serverStats": "Server Statistics"
+    "serverStats": "Server Statistics",
+    "errorLoading": "Error Loading Statistics"
   },
   "timeAgo": {
     "justNow": "Just now",
@@ -315,7 +326,8 @@
     "failedToDeletePlayerStats": "Failed to delete player stats",
     "failedToDeleteAllPlayerStats": "Failed to delete all player stats",
     "selectImageFile": "Please select an image file",
-    "fileSizeTooLarge": "Image file size must be less than 5MB"
+    "fileSizeTooLarge": "Image file size must be less than 5MB",
+    "failedToDelete": "Failed to delete {entity}"
   },
   "welcome": {
     "title": "Welcome to",
@@ -377,7 +389,6 @@
     "connectionDetails": "Connection Details",
     "serverInformation": "Server Information",
     "viewApiKey": "View API Key",
-    "deleteServer": "Delete Server",
     "viewDetails": "View Details",
     "apiKey": "API Key",
     "myServers": "My Servers",
@@ -386,6 +397,15 @@
     "hosting": "Hosting",
     "accountSettings": "Account Settings",
     "discordIntegration": "Discord Integration",
+    "deleteYourAccount": "Delete Your Account",
+    "deleteAccountWarning": "This action cannot be undone!",
+    "deleteAccountWillRemove": "Deleting your account will permanently remove:",
+    "deleteAccountAllServers": "All your servers",
+    "deleteAccountAllCommunities": "All your communities",
+    "deleteAccountFavorites": "Your favorite servers",
+    "deleteAccountProfileSettings": "Your profile and account settings",
+    "deleteAccountConfirmation": "Are you sure you want to delete your account? This action cannot be undone.\r\n              This will permanently remove all your servers, communities, favorites, profile and account settings.",
+    "typeUsername": "To confirm, please type your username:",
     "discordConnected": {
       "title": "Discord Connected",
       "readyForIntegrations": "Ready for server integrations",
@@ -427,7 +447,6 @@
     "needTwoServers": "You need at least 2 servers to create an embed",
     "embedInvalid": "This embed is invalid or outdated",
     "deleteEmbed": "Delete Embed",
-    "deleteEmbedConfirmation": "Are you sure you want to delete this embed? This action cannot be undone.",
     "editEmbed": "Edit Embed",
     "noDiscordServers": "No Discord servers found",
     "connectDiscord": "Connect your Discord account to create embeds",
@@ -457,7 +476,6 @@
     "linkYourDiscordAccount": "Link your Discord account for server integrations",
     "unlink": "Unlink",
     "unlinking": "Unlinking...",
-    "unlinkConfirmation": "Are you sure you want to unlink your Discord account?",
     "unlinkSuccess": "Discord account unlinked successfully!",
     "unlinkError": "Failed to unlink Discord account"
   },
@@ -474,6 +492,9 @@
     "batchIPAddressesWarning": "You can only add up to {limit} servers at once. Only the first {limit} IP addresses will be processed.",
     "someIPAddressesAppearInvalid": "Some IP addresses appear invalid:",
     "assignToCommunityDescriptionBatch": "Add {count} to your community: {communityName}",
+    "confirmDeletion": "Confirm Deletion",
+    "deleteServer": "Delete Server",
+    "areYouSureDeleteServer": "Are you sure you want to delete the server",
     "proTip": {
       "title": "Pro Tip:",
       "createCommunity": "Create a",
@@ -555,17 +576,8 @@
     "chooseLogo": "Choose Logo",
     "logoSizeRecommendation": "Upload a square image (recommended size: 200x200px)",
     "chooseBanner": "Choose Banner",
-    "noBanner": "No banner image",
     "bannerSizeRecommendation": "Upload a landscape image (recommended size: 1200x300px)",
-    "bannerRecommendationsTitle": "Banner image recommendations:",
-    "optimalSizeRecommendation": "Optimal size: 1200×300 pixels (4:1 ratio)",
-    "minimumSizeRecommendation": "Minimum size: 600×150 pixels",
-    "maxFileSizeRecommendation": "Maximum file size: 5MB",
-    "formatRecommendation": "Formats: JPG, PNG, or GIF",
-    "contentPlacementRecommendation": "Important content should be centered, as edges may be cropped on some displays",
-    "uploading": "Uploading: {progress}%",
-    "deleteCommunity": "Delete Community",
-    "deleteConfirmation": "Are you sure you want to delete your community? This action cannot be undone."
+    "deleteCommunity": "Delete Community"
   },
   "hostingControl": {
     "errorLoading": "Error Loading Hosting Provider",
@@ -586,8 +598,6 @@
     "singleIp": "Single IP",
     "subnetMask": "Subnet Mask",
     "networkAddress": "Network Address",
-    "logoDescription": "Upload a square image (recommended size: 200x200px)",
-    "bannerDescription": "Upload a landscape image (recommended size: 1200x300px)",
     "uploadLogo": "Choose Logo",
     "uploadBanner": "Choose Banner",
     "description": "Description",
@@ -600,8 +610,7 @@
     "invalidSubnetMask": "Invalid subnet mask",
     "fixIpErrors": "Please fix the errors in IP addresses",
     "updateError": "Failed to update hosting provider",
-    "subnetMode": "Subnet Mode",
-    "describeCommunity": "Describe your hosting provider..."
+    "subnetMode": "Subnet Mode"
   },
   "plugins": {
     "enhanceYourServer": "Enhance Your Server",
@@ -617,7 +626,8 @@
     "playerStatsResetSuccessfully": "All player stats have been reset successfully",
     "confirmDeleteAll": "Are you sure you want to delete ALL player stats? This action cannot be undone.",
     "noPlayerStatsAvailable": "No Player Stats Available",
-    "noPlayerStatsAvailableDescription": "No player statistics have been recorded for this server yet."
+    "noPlayerStatsAvailableDescription": "No player statistics have been recorded for this server yet.",
+    "playerStatsManagement": "Player Stats Management"
   },
   "claimServer": {
     "title": "Claim Server Ownership",
@@ -634,14 +644,22 @@
     "ownershipChange": "If this server was previously claimed by someone else, you will become the new owner.",
     "verifyAndClaim": "Verify & Claim"
   },
-  "playerStats": {
-    "topPerformers": "Top Performers",
-    "allPlayersStats": "All Players Statistics",
-    "noRecords": "No player records found",
-    "statsNotEnabled": "Stats recording needs to be configured on this server to view player statistics."
-  },
   "deleteData": {
     "confirmationPrompt": "To confirm, please type \"{text}\" below:",
     "confirmationPlaceholder": "Type confirmation text here"
+  },
+  "apiKey": {
+    "aboutThisApiKey": "About This API Key",
+    "apiKeyDescription": "This API key is used for CS2 plugins to track player statistics on your server:",
+    "trackPlayerStats": "Track player kills, deaths, assists, headshots, and more",
+    "quickServerUpdates": "Quick server status updates",
+    "recordPerformanceMetrics": "Record performance metrics for your server",
+    "toUseThisKey": "To use this key:",
+    "installPlugin": "Install the CS2ServersList plugin on your server",
+    "insertApiKey": "Insert this API key in your plugin configuration file",
+    "restartServer": "Restart your server or reload the plugin",
+    "futureCapabilities": "Note: In the future, additional API capabilities may be added to this key.",
+    "resetApiKey": "Reset API Key",
+    "resetApiKeyWarning": "Resetting your API key will invalidate your current key. Any applications using your current API key will need to be updated."
   }
 }
