@@ -64,6 +64,7 @@
     "close": "Close",
     "totalServers": "Total servers",
     "website": "Website",
+    "steam": "Steam",
     "url": "URL",
     "pageUrl": "Page URL",
     "channelUrl": "Channel URL",
@@ -105,6 +106,7 @@
     "confirmUnlink": "Are you sure you want to unlink your {entity}?",
     "uploading": "Uploading: {progress}%",
     "viewCommunity": "View Community",
+    "opening": "Opening...",
     "fileUpload": {
       "logo": {
         "choose": "Choose Logo",
@@ -345,7 +347,10 @@
       "discord": "Discord Integration",
       "processing": "Processing Authentication",
       "errorTitle": "Authentication Error",
-      "retry": "Try Again"
+      "retry": "Try Again",
+      "authenticating": "Authenticating...",
+      "success": "Success! Redirecting...",
+      "error": "Authentication failed"
     }
   },
   "hostings": {
@@ -668,7 +673,6 @@
     "secondaryBgColor": "Secondary Background",
     "resetColors": "Reset Colors",
     "options": "Widget Options",
-    "serverLimit": "Number of Servers to Show",
     "showPlayers": "Show Players List",
     "hideServers": "Hide Servers List",
     "hideServerName": "Hide Server Names",
