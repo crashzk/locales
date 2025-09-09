@@ -139,6 +139,7 @@
   "server": {
     "name": "Server Name",
     "connectConfirm": "Connect to this server?",
+    "claimServer": "Claim Server",
     "map": "Map",
     "status": "Status",
     "favorite": "Add to favorites",
@@ -237,7 +238,9 @@
       "default": "No servers are currently available. Please check back later.",
       "withFilters": "No servers match your current filters. Try adjusting your search criteria.",
       "withRegion": "No servers found in {region}. Try selecting a different region or location.",
-      "withCountry": "No servers found in {country}."
+      "withCountry": "No servers found in {country}.",
+      "withGameMode": "No servers found for the selected game mode: {mode}.",
+      "withGameModeAndLocation":"No servers found in {country} for the selected game mode: {mode}."
     }
   },
   "pagination": {
